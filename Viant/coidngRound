@@ -1,0 +1,84 @@
+//Write a code that will add two numbers which are given to you as string
+// 15.20
+// 16.44
+// 31.64
+// 15.6    = >   156000
+// 16.4404 =>    164044
+                //  32   
+// // 32.04
+// 4
+// 4
+// postive numbers
+// number are less than Integer max.
+class Solution{
+    public static void main(String[] args) {
+        String a = "0.1";
+        String b = "10.9";
+        System.out.println(addNumbers(a,b));
+    }
+    private static String addNumbers(String a, String b){
+        
+        String[] numsA = a.split("\\.");
+        String[] numsB = b.split("\\.");
+        
+        String leftDecimal = add(numsA[0], numsB[0]);
+        if(numsA.length == 1 && numsB.length == 1){
+            return  leftDecimal;
+        }
+        
+        int lenA = numsA.length > 1 ? numsA[1].length() : 0;
+        int lenB = numsB.length > 1 ? numsB[1].length() : 0;
+        
+        String decimalA = numsA.length > 1 ? numsA[1] : "";
+        String decimalB = numsB.length > 1 ? numsB[1] : "";
+        
+        int diff = 0;
+        if(lenA > lenB){
+            diff = lenA - lenB;
+            while(diff > 0){
+                decimalB += "0";
+                diff--;
+            }
+        }else if(lenA < lenB){
+            diff = lenB - lenA;
+            while(diff > 0){
+                decimalA += "0";
+                diff--;
+            }
+        }   
+        
+        String decimalTotal = add(decimalA , decimalB);
+        
+        if(decimalTotal.length() > Math.max(lenA, lenB)){
+            leftDecimal = add( leftDecimal , "1");
+            decimalTotal = decimalTotal.substring(1);
+        }
+
+        return leftDecimal + "." + decimalTotal;
+    }
+    
+    private static String add(String a, String b){
+        
+        int indexA = a.length() - 1, indexB = b.length() - 1;
+        int carry = 0;
+        int numA = 0;
+        int numB = 0;
+        StringBuilder sb =  new StringBuilder();
+        
+        while(indexA >= 0 || indexB >= 0){
+            numA = (indexA >= 0) ? a.charAt(indexA) - '0' : 0; 
+            numB = (indexB >= 0) ? b.charAt(indexB) - '0' : 0;
+            
+            int total = numA + numB + carry;
+            sb.insert(0,total%10);
+           
+            carry = total/10;
+            indexA--;
+            indexB--;
+        }
+        if(carry == 1){
+            sb.insert(0,1);
+        }
+        return sb.toString();
+    }
+}
