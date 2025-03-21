@@ -7,4 +7,8 @@ https://leetcode.com/discuss/post/6403987/microsoft-sde-2-recent-questions-2025-
 Designed a strategy-based board game with an object-oriented approach.
 Discussion on game mechanics, data storage, and real-time interactions.
 
-Design a api gateway (focus on the authentication service of the api gateway.)
+hld - Design a api gateway (focus on the authentication service of the api gateway.)
+
+
+lld - Implemented a subscription-based notification service where clients register for timed callbacks.
+Designed a strategy-based board game
