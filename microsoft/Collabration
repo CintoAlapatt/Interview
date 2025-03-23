@@ -1,0 +1,19 @@
+Situation:
+I was working on a project involving backend developers, frontend developers, QA engineers, and a product manager to deliver a secure payment processing 
+module that required PCI DSS compliance. We were running on a tight deadline, and every team had competing priorities.
+
+Task:
+My primary responsibility was completing the PCI DSS self-compliance form and ensuring that every team clearly understood and met the detailed requirements 
+outlined in the compliance guidelines. Additionally, I had backend development tasks to complete, which further increased the complexity of the project.
+
+Action:
+I closely coordinated with each team by setting up regular compliance-focused meetings and one-on-one check-ins to discuss and verify adherence to PCI DSS
+requirements. Given that compliance was initially not seen as a top priority by all teams, I proactively communicated its critical importance and 
+demonstrated how neglecting compliance could significantly impact project success and security. I carefully documented all compliance checkpoints and 
+communicated them clearly to prevent misunderstandings. Whenever discrepancies or potential issues arose, I actively collaborated with team members to 
+quickly resolve them, ensuring comprehensive understanding and immediate remediation.
+
+Result:
+By maintaining rigorous oversight, clearly emphasizing compliance's urgency, and fostering open communication, I successfully ensured that all teams 
+fully met the PCI DSS compliance requirements. This proactive and collaborative approach allowed us to submit the self-compliance form on schedule, 
+significantly mitigating security risks, and strengthening overall project reliability, even under tight deadlines.
