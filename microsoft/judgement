@@ -1,0 +1,32 @@
+Situation:"I was responsible for developing a machine learning model predicting patient readmissions on a healthcare platform. The model depended on a
+MySQL materialized view combining structured patient data from MySQL and unstructured clinical notes from MongoDB. Initially, every incoming patient report
+via Kafka triggered a view refresh. Upon closer inspection, I realized frequent refreshes were not necessary—predictions only needed updates after all .
+patient data was in, causing unnecessary ETL failures, stale data, and escalating costs."
+
+Task:"My goal was to effectively scope and address this problem, optimizing data freshness, reducing costs, and ensuring accurate, timely predictions,
+particularly for critical patient cases."
+
+Action:
+
+Gathered and Confirmed Information: Conducted detailed analysis by reviewing ETL logs, AWS Glue monitoring dashboards, and Flask cache behaviors, 
+identifying unnecessary refreshes causing performance issues and high daily costs ($50/day).
+
+Requested Assistance Timely: Engaged AWS support and our DevOps team promptly to validate technical configurations and performance optimization strategies.
+
+Acted Decisively on Own Authority: Quickly moved away from automatic refreshes upon each report. Instead, implemented incremental data injections 
+directly into the materialized view using targeted SQL updates:
+
+INSERT INTO patient_readmissions_mv (patient_id, admission_date, notes)
+VALUES (?, ?, ?)
+ON DUPLICATE KEY UPDATE admission_date=VALUES(admission_date), notes=VALUES(notes);
+
+Made Difficult Decisions: Chose to dynamically trigger model predictions only when healthcare professionals accessed the dashboard. Additionally, 
+instituted a critical-patient-specific refresh interval of every 15 minutes to maintain accuracy and timeliness for urgent cases.
+
+Exercised Exceptional Judgment: Implemented backend freshness validation checks and clear, user-facing alerts via React, communicating the exact 
+freshness of predictions transparently to healthcare users.
+
+Result:"The revised approach delivered timely, accurate predictions, particularly benefiting critical patient care, while significantly reducing 
+infrastructure costs by 70% (from $50/day to approximately $15/day). Healthcare providers valued the clear, real-time freshness alerts, reinforcing 
+trust and improving patient care outcomes. This experience underscored my capability to scope complex problems accurately, apply relevant technical 
+expertise decisively, and consistently exercise strong, informed judgment under pressure.
