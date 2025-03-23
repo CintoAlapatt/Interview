@@ -1,0 +1,23 @@
+Situation:
+At PaperCrane, we were developing a sports venue booking application on a pay-per-hour basis. Through conversations with customers, we identified a 
+recurring issue: frequent cancellations caused primarily by individual team members dropping out at the last minute.
+
+Task:
+We needed to proactively reduce cancellations and enhance the overall user experience by addressing the root cause identified through customer feedback.
+
+Action:
+Initially, we implemented a cancellation fee to discourage last-minute cancellations. However, a high cancellation fee inadvertently led users to bypass
+the app and make bookings or cancellations via offline phone calls, disrupting our digital user flow.
+
+To resolve this issue, we introduced a feature allowing users to convert cancellations into a shared payment model, distributing the cost among confirmed
+attendees. We also enabled users to create invitations for additional players to join, offering free cancellation for new invitees. Despite improving
+booking retention, this approach led to some invitees not showing up, negatively impacting customer satisfaction.
+
+Responding to customer feedback, we further refined the process by requiring invitees to make a partial upfront payment, confirming their attendance, 
+and refunding the excess if fewer people attended. Additionally, we created an option for venue managers to host crowd-sourced "open games," enabling 
+individuals to join existing bookings directly from the start.
+
+Result:
+These adjustments significantly reduced cancellations, improved user satisfaction, and created a robust, engaging booking experience, directly integrating
+customer expectations into product development and enhancing service quality. it also led to new customer acquistion and create teams who would subsequently 
+book games together.
