@@ -1,10 +1,11 @@
 Situation:
 While working on a healthcare application managing large volumes of patient data, significant performance issues were impacting healthcare providers.
 Slow response times when fetching patient records, generating reports, and retrieving medical histories were negatively affecting real-time decision-making.
-
+Customer concerns were actively voiced, emphasizing the critical need for immediate improvements.
 
 Task:
-Identify the root cause of the performance bottleneck and systematically optimize the system to ensure rapid and efficient data retrieval.
+Identify the root cause of the performance bottleneck and systematically optimize the system to ensure rapid and efficient data retrieval. 
+Integrate customer feedback and requirements into the improvement process to enhance overall customer satisfaction.
 
 Action:
 I systematically approached the issue by:
@@ -27,6 +28,14 @@ Caching Implementation:
 
 Integrated Redis caching to store frequently accessed patient records, reducing database load by 40% and instantly improving response times.
 
+Customer Feedback Integration:
+
+Established feedback systems to capture real-time user input and monitor improvements.
+
+Regularly communicated with healthcare providers to align optimizations with their specific needs and expectations.
+
+Acted as an advocate to prioritize and resolve customer concerns quickly.
+
 Results:
 
 Achieved 40% overall query execution time reduction.
@@ -39,10 +48,14 @@ Significantly reduced server load with Redis caching, enabling instantaneous dat
 
 Enhanced system scalability for handling increased data volumes efficiently.
 
+Improved service quality, directly addressing customer concerns and expectations.
+
 Impact & Lessons Learned:
 
-Delivered timely and efficient real-time data access, significantly improving healthcare provider experience.
+Delivered timely and efficient real-time data access, significantly improving healthcare provider experience and customer satisfaction.
 
 Demonstrated structured problem-solving skills, effectively analyzing and optimizing large-scale system performance.
 
-Strengthened key engineering competencies in database architecture, SQL query optimization, and strategic performance tuning.
+Strengthened key engineering competencies in database architecture, SQL query optimization, strategic performance tuning, and customer-centric 
+solution development.
+
