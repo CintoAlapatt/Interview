@@ -1,36 +1,37 @@
-At MATCH4ACTION-CROWDDOING, I joined a healthcare infrastructure project that required processing and analyzing large volumes of clinical reports—up to 
-10,000 daily. Initially, we used batch processing, causing latency issues. A strategic organizational decision was made to shift towards a real-time, 
-event-driven architecture, specifically adopting Apache Kafka, a technology new to most of our team.
+At MATCH4ACTION-CROWDDOING, I joined a healthcare infrastructure project that required processing and analyzing large volumes of clinical reports—up to
+10,000 daily. Initially, we used batch processing via REST APIs, which led to latency issues. To overcome these performance bottlenecks, a strategic 
+organizational decision was made to transition towards a real-time, event-driven architecture, specifically adopting Amazon Kinesis—a technology largely
+new to our team.
 
 Task:
-My responsibility was to quickly integrate Apache Kafka into our system to meet performance goals, and crucially, to help the entire team smoothly 
-transition to this new technology. I viewed this significant change and the inherent ambiguity as opportunities for organizational improvement, recognizing 
-the potential benefits Kafka offered to scalability, durability, and responsiveness.
+My responsibility was to swiftly integrate Amazon Kinesis into our existing system to achieve our ambitious performance targets, and crucially, 
+to facilitate a smooth transition for the entire team. I viewed this significant change and the inherent ambiguity as an opportunity for organizational 
+advancement, recognizing the scalability, durability, and responsiveness benefits Kinesis offered.
 
 Action:
 
-Immediate incorporation: I took immediate steps to incorporate Kafka into my workstream, proactively learning Kafka by diving into official documentation, 
-online courses, and practical experimentation.
+Immediate incorporation: I immediately took proactive steps to integrate Kinesis into my workflow, quickly learning the technology by thoroughly 
+reviewing AWS documentation, online courses, and practical experimentation.
 
-Constructive attitude and team encouragement: Recognizing potential team stress from adopting new technology, I maintained a positive, constructive attitude. 
-I actively encouraged team members through knowledge-sharing workshops and training sessions, emphasizing Kafka’s benefits to the project's success and 
-overall organizational efficiency.
+Constructive attitude and team encouragement: Recognizing the potential team anxiety over adopting new technology, I maintained an enthusiastic, 
+constructive attitude. I actively supported my colleagues by conducting knowledge-sharing workshops and training sessions, clearly communicating
+Kinesis’s benefits to the project's success and overall efficiency.
 
-Skillfully timed implementation: Carefully assessing organizational readiness and environmental conditions, I skillfully timed Kafka's implementation phases.
-Initially, I implemented small proof-of-concepts to build confidence. Subsequently, I gradually expanded Kafka's usage, ensuring minimal disruption and
-maximizing organizational buy-in at every stage.
+Strategically timed implementation: After carefully evaluating organizational readiness, I strategically phased the implementation of Kinesis.
+Initially, I developed small-scale proof-of-concepts to build confidence. Following successful demonstrations, I incrementally expanded Kinesis's
+integration into our processes, ensuring minimal disruption and maximum organizational buy-in at each phase.
 
-Robust technical implementation: I set up Kafka clusters, implemented producers and consumers integrated with AWS Lambda (triggered by S3 uploads), and 
-included robust error handling with dead-letter queues. My approach balanced ambitious goals (99.999% durability, reduced ingestion failures, and 15ms 
-latency targets) with practical, phased integration steps.
+Robust technical implementation: I set up Kinesis Data Streams, integrated producers and consumers seamlessly with AWS Lambda (triggered by S3 uploads), 
+and implemented robust error-handling measures, including dead-letter queues. My approach aimed for ambitious performance metrics (99.999% durability, 
+a 95% reduction in ingestion failures, and sub-15ms latency targets), balanced with practical, step-by-step integration.
 
 Result:
 
-Successfully incorporated Kafka into our infrastructure, achieving significant latency improvements (query response within 15ms), drastically reducing 
-ingestion failures by 95%, and reaching durability goals of 99.999%.
+Successfully integrated Amazon Kinesis into our infrastructure, achieving substantial latency improvements with query responses now under 15ms, reducing
+ingestion failures by 95%, and meeting our durability goal of 99.999%.
 
-Enhanced organizational adaptability by viewing ambiguity as an opportunity for team and technological growth, resulting in smooth adoption and positive 
-team attitudes toward the change.
+Enhanced organizational adaptability by embracing ambiguity as a pathway for both team and technological growth, leading to smooth adoption and positive 
+attitudes toward change.
 
-The carefully timed and thoughtfully executed integration allowed the team to quickly realize Kafka's benefits without unnecessary stress or disruption, 
-further establishing a resilient organizational culture responsive to future changes.
+The carefully timed and thoughtfully executed integration enabled the team to swiftly realize the advantages of Kinesis without unnecessary disruption,
+reinforcing a resilient organizational culture capable of effectively responding to future technological shifts.
